@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            padding: 25px;
+            border:1px solid black;
+        }
+        .tresure{
+            background-color: blue;
+        }
+        .light{
+            background-color: yellow;
+        }
+        .enemy{
+            background-color: red;
+        }
+        .wall{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <select name="" id="">
+        <option value="void">void</option>
+        <option value="wall">wall</option>
+        <option value="enemy">enemy</option>
+        <option value="light">light</option>
+        <option value="tresure">tresure</option>
+    </select>
+
+    <button class="add">Zapisz poziom</button>
+    <button class="load">Wczytaj poziom z serwera</button>
+    <button class="loadKox">Wczytaj mega dobry level</button>
+    <a href="dist/index.html"><button>Zagraj</button></a>
+    <table>
+
+    </table>
+
+    <script src="editor.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giercowanie</title>
+    <style>
+      body{
+        padding: 0;
+        margin: 0 auto;
+      }
+      #info {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom:0;
+        width: 100vw;
+        background-color:rgba(128,128,128,0.5);
+        height: 10vh;
+      }
+      .align{
+        text-align: center;
+      }
+      input[type="range"]{
+        width: 5vw;
+      }
+    </style>
+<script defer src="bundle.js?5cbe7ea72e8b62f3bc7d"></script></head>
+<body>
+  <div id="root"></div>
+   <div id="info">
+     <div class="align">
+       Cienie <br>
+     <input id="shadow"  type="checkbox">
+     </div>
+     <div class="align">
+      Widok z góry <br>
+    <input id="camera-from-top" type="checkbox">
+    </div>
+    <div class="align">
+      Kamera za playerem <br> 
+    <input id="camera-behind-player" checked="true" type="checkbox">
+    </div>
+    <div class="align">
+      Odległość kamery od playera <br>
+    <input id="camera-distance" value="0" max="50" min="-400" type="range">
+    </div>
+    <div class="align">
+      Wysokość kamery nad graczem <br>
+      <input id="camera-height" value="0" max="50" min="-400" type="range">
+    </div>
+
+    <div class="align">
+      Kamera nachylenie x <br>
+      <input id="camera-angle-x" max="100" min="-100" type="range">
+    </div>
+
+    <div class="align">
+      Kamera nachylenie y <br>
+      <input id="camera-angle-y" max="100" min="-100" type="range">
+    </div>
+
+
+    <div class="align">
+      FOV kamery <br>
+    <input id="camera-fov" type="range">
+    </div>
+
+    <div class="align">
+      Moc świateł <br>
+    <input id="light-power" min="0" max="5" step="0.1" value="0" type="range">
+    </div>
+
+    <div class="align">
+      Wielkość ognisk <br>
+    <input id="fire-height" min="0" max="50" step="0.1" value="0" type="range">
+    </div>
+
+    <div class="align">
+      Szerokość ognisk X <br>
+    <input id="fire-width-x" min="10" max="50" step="0.1" value="10" type="range">
+    </div>
+
+    <div class="align">
+      Szerokość ognisk Z <br>
+    <input id="fire-width-z" min="10" max="50" step="0.1" value="10" type="range">
+    </div>
+
+    <div class="align">
+      Wielkość lasera <br>
+    <input id="laser-size" min="10" max="50" step="0.1" value="10" type="range">
+    </div>
+    
+    <div class="align">
+      Rozrzut lasera <br>
+    <input id="laser-spread" min="0" max="10" step="0.1" value="10" type="range">
+    </div>
+
+   </div>
+</body>
+</html>
